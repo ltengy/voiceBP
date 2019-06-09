@@ -144,7 +144,7 @@ class BPNeuralNetwork:
                 # print("第%d轮，训练次数：%d"%(j,i),end='\r')
             self.train_acc = self.get_precise_rate(train_list[0], train_list[1])
             self.test_acc = self.get_precise_rate(test_list[0], test_list[1])
-            # print("训练次数：%d,train_acc:%f,test_acc%f"%(j,self.train_acc,self.test_acc),end='\r')
+            print("训练次数：%d,train_acc:%f,test_acc%f" % (j, self.train_acc, self.test_acc), end='\r')
 
     def save(self, fliename):
         f = open(fliename, 'wb')
